@@ -1,0 +1,28 @@
+.menu_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #305350;
+  color: whitesmoke;
+  border-radius: 50px 50px 0 0;
+  position: fixed;
+  bottom: 0;
+}
+
+.menu{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menuitem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  flex-direction: column;
+  gap: 10px;
+}

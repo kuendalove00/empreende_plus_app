@@ -1,0 +1,103 @@
+.card {
+  position: relative;
+  display: flex;
+  padding: 14px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: stretch;
+  min-height: 100%;
+  min-width: 100%;
+  color: whitesmoke;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+
+.icon_container {
+  width: 32px;
+  height: 32px;
+}
+
+.icon {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rosybrown;
+  color: whitesmoke;
+  padding: 5px; /* Padding set to 0 to maintain consistent sizing */
+}
+
+.title {
+  font-size: 1.4em;
+  text-wrap: wrap; /* Consider using word-wrap for line breaks */
+}
+
+.description {
+  font-size: 0.8rem;
+}
+
+.users {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 100%; /* Ensure it stretches across the container */
+  height: 20px;
+  justify-content: space-between; /* Spread the icons evenly */
+}
+
+.usericon {
+  position: absolute;
+  display: flex;
+  width: 20px; /* Adjusted for consistency */
+  height: 20px; /* Adjusted for consistency */
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rosybrown;
+  color: whitesmoke;
+  padding: 12px; /* Reduced padding to fit within defined size */
+  border: 2px solid;
+  font-size: .6rem;
+}
+
+.usericon:first-child {
+  transform: translateX(0px); /* No shift for the first item */
+}
+
+.usericon:nth-child(2) {
+  transform: translateX(10px); /* Shifts the second item */
+}
+
+.usericon:nth-child(3) {
+  transform: translateX(20px); /* Shifts the third item further */
+}
+.usericon:nth-child(4) {
+  transform: translateX(30px); /* Shifts the third item further */
+}
+
+.element{
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 1.8em;
+    text-wrap: wrap; /* Consider using word-wrap for line breaks */
+  }
+  
+  .description {
+    font-size: 1.2rem;
+  }
+  .card{
+    justify-content: space-between;
+    gap: 18px;
+  }
+  .element{
+    display: none !important;
+  }
+}
