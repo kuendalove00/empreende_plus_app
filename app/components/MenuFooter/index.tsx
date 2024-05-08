@@ -7,7 +7,7 @@ const index = () => {
       <ul className={styles.menu}>
         <li className={styles.menuitem}>
           <Image
-            src = {"Home.svg"}
+            src = {"../Home.svg"}
             alt='Home'
             width={33}
             height={30.5}
@@ -16,7 +16,7 @@ const index = () => {
         </li>
         <li className={styles.menuitem}>
           <Image
-              src = {"SpeechBubble.svg"}
+              src = {"../SpeechBubble.svg"}
               alt='FeedBack'
               width={33}
               height={30.5}
@@ -25,7 +25,7 @@ const index = () => {
         </li>
         <li className={styles.menuitem}>
           <Image
-            src = {"Star.svg"}
+            src = {"../Star.svg"}
             alt='Rate'
             width={33}
             height={30.5}
