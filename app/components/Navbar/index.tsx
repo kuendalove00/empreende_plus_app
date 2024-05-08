@@ -11,7 +11,7 @@ export const NavBar = () => {
       <div className={styles.navbar}>
         <div className={styles.logo}>
             <Image
-             src={"logo.svg"}
+             src={"../logo.svg"}
              width={113}
              height={20}
              alt="Spacium Logo"

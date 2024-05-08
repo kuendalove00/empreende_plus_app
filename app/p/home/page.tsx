@@ -1,10 +1,10 @@
 'use client';
 import Image from "next/image";
-import { NavBar } from "./components/Navbar";
-import Cards from "./components/Cards";
+import { NavBar } from "../../components/Navbar";
+import Cards from "../../components/Cards";
 import styles from "./page.module.css";
-import MenuFooter from "./components/MenuFooter";
-export default function Home() {
+import MenuFooter from "../../components/MenuFooter";
+const Home = () => {
   return (
     <div className={styles.screen}>
       <NavBar/>
@@ -17,7 +17,7 @@ export default function Home() {
       <section className={styles.cards_container}>
         <div className={styles.rowcard}>
           <Cards 
-            url={"/Puzzle.svg"}
+            url={"../Puzzle.svg"}
             iconColor = {"#5CB0A9"}
             ySize={"340px"} 
             title={"Caso de Estudo"} 
@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <div className={styles.side_action}>
           <Cards 
-          url={"/LightOn.svg"}
+          url={"../LightOn.svg"}
           iconColor = {"#D2A340"}
           ySize={"50%"} 
           title={"Perguntas Múltiplas"} 
@@ -38,7 +38,7 @@ export default function Home() {
           fgColor={"#D2A340"} 
           />
           <Cards 
-          url={"/People.svg"}
+          url={"../People.svg"}
           iconColor = {"#FFEAB9"}
           ySize={"50%"} 
           title={"Desafio Multiplayer"}
@@ -51,7 +51,7 @@ export default function Home() {
         <h1>Outros</h1>
         <button className={styles.fullbtn}>
           <Image 
-            src={"Warranty.svg"}
+            src={"../Warranty.svg"}
             alt="Warranty"
             width={48}
             height={48} 
@@ -64,3 +64,4 @@ export default function Home() {
     </div>
   );
 }
+export default Home;
