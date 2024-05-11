@@ -1,4 +1,5 @@
 .screen{
+  background-color: var(--background);
   position: relative;
 }
 .container{
@@ -44,15 +45,16 @@
   display: flex;
   gap: 10px;
   flex-direction: column;
+  color: var(--foreground);
 }
 
 .hastag{
   padding: 10px 12px;
-  background-color: #305350;
-  width: fit-content; 
-  width: -moz-fit-content;
+  background-color: var(--secondary-green);
+  width: -moz-fit-content; 
+  width: fit-content;
   border-radius: 20px;
-  color: #fff;
+  color: var(--background);
 }
 
 .fullbtn{
@@ -61,9 +63,9 @@
   border-radius: 15px;
   width: auto;
   min-width: 100%;
-  color: #D2A340;
-  background-color: #FFEAB9;
-  border-color: #D2A340;
+  color: var(--secondary-yellow);
+  background-color: var(--secondary-yellow-white);
+  border-color: var(--secondary-yellow);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,3 +90,4 @@
   color: whitesmoke;
   padding: 10px;
 }
+

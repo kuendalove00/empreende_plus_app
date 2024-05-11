@@ -11,10 +11,6 @@ type Slide = {
 // Define the slides with image URLs
 const slides: Slide[] = [
   {
-    imageUrl: '/welcome/welcome0.png',
-    altText: 'A beautiful sunset over the ocean.',
-  },
-  {
     imageUrl: '/welcome/welcome1.png',
     altText: 'A beautiful sunset over the ocean.',
   },
@@ -90,7 +86,7 @@ const ImageCarousel: React.FC = () => {
         ))}
       </div>
       {currentSlide === slides.length - 1 && (
-        <Link href="/home" className={styles.getStartedButton}>Get Started
+        <Link href="/signin" className={styles.getStartedButton}>Get Started
       </Link>
       )}
     </div>

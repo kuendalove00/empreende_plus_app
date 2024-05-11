@@ -1,0 +1,55 @@
+
+.father{
+  position: relative;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.father header {
+  width: 100%;
+  height: 15dvh;
+  display: flex;
+  justify-content: end;
+  /* background-color: #000; */
+}
+
+.father .container {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #000; */
+}
+
+.father .container .txt_name {
+  width: 71%;
+  display: flex;
+  justify-content: end;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin: 5px 0 0 0;
+  /* background-color: #000; */
+}
+
+.father footer {
+  width: 100%;
+  height: 15dvh;
+  display: flex;
+  position: sticky;
+  justify-content: start;
+  align-items: end;
+  flex-grow: 1;
+  /* background-color: #000; */
+}
+
+.gold {
+  color: #d2a340;
+}
+
+.green {
+  color: #305350;
+}

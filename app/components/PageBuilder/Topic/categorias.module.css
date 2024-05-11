@@ -1,0 +1,68 @@
+.container {
+  width: 100%;
+  height: 100dvh;
+  background-image: url(../../../../public/signin/vectors.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--foreground);
+}
+
+.texto {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.texto p {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--secondary-green);
+}
+
+.texto h2 {
+  font-weight: 600;
+  font-size: 1.6em;
+  margin: 20px;
+}
+
+.options {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.options .btn {
+  border: none;
+  width: 300px;
+  padding: 15px 50px;
+  border-radius: 15px;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.dark_gold{
+  color: var(--secondary-yellow);
+}
+
+.btn_light_green{
+  background-color: var(--secondary-green-light);
+}
+.btn_green{
+  background-color: var(--secondary-green);
+}
+.btn_gold{
+  background-color: var(--secondary-yellow);
+}
+

@@ -9,8 +9,7 @@
 }
 
 .image {
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
   transition: transform 1s ease-in-out; /* Smooth transition */
 }
 
@@ -25,7 +24,7 @@
 .dot {
   height: 12px;
   width: 12px;
-  background-color: lightgray;
+  background-color: var(--secondary-green);
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
@@ -33,18 +32,19 @@
 }
 
 .dot:hover {
-  background-color: gray;
+  background-color: var(--secondary-green);
 }
 
 .activeDot {
-  background-color: black;
+  background-color: var(--secondary-yellow);
+  filter: brightness(150%);
 }
 
 .getStartedButton{
   position: absolute;
   padding: 15px 40px;
-  background-color: var(--background-end-rgb);
-  color: green;
+  background-color: var(--foreground);
+  color: var(--secondary-green);
   font-size: 1.2rem;
   border: none;
   border-radius: 40px;
