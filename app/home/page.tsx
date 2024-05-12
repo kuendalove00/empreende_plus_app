@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { NavBar } from "../components/Navbar";
+import { NavBar } from "../components/Navbar/NavBar";
 import Cards from "../components/Cards";
 import styles from "./page.module.css";
 import MenuFooter from "../components/MenuFooter";

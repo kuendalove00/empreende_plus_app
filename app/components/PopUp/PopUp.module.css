@@ -1,0 +1,31 @@
+.popup{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+  border-radius: 20px;
+  min-width: 100%;
+  height: auto;
+  color: var(--foreground);
+  background-color: var(--background);
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.notification{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100dvw;
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.527);
+  pointer-events: all;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:  0 30px;
+}

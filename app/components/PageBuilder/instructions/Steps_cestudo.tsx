@@ -78,7 +78,7 @@ export function Steps() {
         </div>
       </div>
       <div className={cestudo.button}>
-        <Link href="/categoria" className={cestudo.Link}>
+        <Link href="/quiz" className={cestudo.Link}>
           <button type="button" className={cestudo.start}>
             Jogar agora
           </button>

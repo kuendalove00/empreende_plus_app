@@ -10,17 +10,18 @@
   --foreground: #212223;
   --foreground-yellow-white:  #FFEAB9;
   --foreground-grey: #DADADA;
-  --foreground-grey-light: #787878;
+  --foreground-grey-light: #D9D9D9;
   --secondary-yellow: #D2A340;
   --secondary-yellow-light: #ffd67d;
   --secondary-green: #305350;
   --secondary-green-light: #4f958f;
+  --secondary-red-light: #DF4A4A;
   --background: #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-  --foreground: #212223;
+  --foreground: #FFFFFF;
   --foreground-grey: #DADADA;
   --foreground-grey-light: #787878;
   --secondary-yellow: #D2A340;
@@ -28,7 +29,8 @@
   --secondary-yellow-light: #c6aa6e;
   --secondary-green: #305350;
   --secondary-green-light: #4f958f;
-  --background: #FFFFFF;
+  --secondary-red-light: #DF4A4A;
+  --background: #212223;
 }
 }
 * {

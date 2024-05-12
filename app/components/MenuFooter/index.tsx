@@ -7,7 +7,7 @@ const index = () => {
     <div className={styles.menu_container}>
       <ul className={styles.menu}>
         <li>
-        <Link href={"/"} className={styles.menuitem}>
+        <Link href={"/home"} className={styles.menuitem}>
           <Image
             src = {"../icons/Home.svg"}
             alt='Home'
