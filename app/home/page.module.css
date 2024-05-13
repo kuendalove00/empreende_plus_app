@@ -54,7 +54,7 @@
   width: -moz-fit-content; 
   width: fit-content;
   border-radius: 20px;
-  color: var(--background);
+  color: #FFF;
 }
 
 .fullbtn{
