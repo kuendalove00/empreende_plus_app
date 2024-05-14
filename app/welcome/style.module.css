@@ -40,7 +40,7 @@
   filter: brightness(150%);
 }
 
-.getStartedButton{
+.getStartedButton {
   position: absolute;
   padding: 15px 40px;
   background-color: var(--foreground);

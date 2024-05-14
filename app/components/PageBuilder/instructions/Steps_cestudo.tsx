@@ -4,6 +4,7 @@ import cestudo from "./steps_ce.module.css";
 import Link from "next/link";
 
 import { Header } from "../../Header/Header";
+import MenuFooter from "../../MenuFooter";
 
 export function Conteudo() {
   return (
@@ -12,12 +13,11 @@ export function Conteudo() {
         <Header />
         <Info />
         <Steps />
+        <MenuFooter />
       </div>
     </>
   );
 }
-
-
 
 export function Info() {
   return (
@@ -53,32 +53,38 @@ export function Steps() {
         <div className={`${cestudo.steps} ${cestudo.step_1}`}>
           <div className={`${cestudo.number} ${cestudo.number_1}`}>1</div>
           <div className={`${cestudo.text_step}`}>
-            Escolha uma categoria e um sector empresarial entre as opções
-            fornecidas.
+            <p>
+              Escolha uma categoria e um sector empresarial entre as opções
+              fornecidas.
+            </p>
           </div>
         </div>
         <div className={`${cestudo.steps} ${cestudo.step_2}`}>
           <div className={`${cestudo.number} ${cestudo.number_2}`}>2</div>
           <div className={`${cestudo.text_step}`}>
-            Leia o caso de estudo cuidadosamente.
+            <p>Leia o caso de estudo cuidadosamente.</p>
           </div>
         </div>
         <div className={`${cestudo.steps} ${cestudo.step_3}`}>
           <div className={`${cestudo.number} ${cestudo.number_3}`}>3</div>
           <div className={`${cestudo.text_step}`}>
-            Responda uma série de perguntas relacionadas ao sector escolhido.
+            <p>
+              Responda uma série de perguntas relacionadas ao sector escolhido.
+            </p>
           </div>
         </div>
         <div className={`${cestudo.steps} ${cestudo.step_4}`}>
-          <div className={`${cestudo.number} ${cestudo.number_4}`}>4</div>
+          <div className={`${cestudo.number} ${cestudo.number_4}`}>#</div>
           <div className={`${cestudo.text_step}`}>
-            Ao final, as suas respostas serão avaliadas com base na
-            originalidade, viabilidade e eficácia.
+            <p>
+              Ao final, as suas respostas serão avaliadas com base na
+              originalidade, viabilidade e eficácia.
+            </p>
           </div>
         </div>
       </div>
       <div className={cestudo.button}>
-        <Link href="/quiz" className={cestudo.Link}>
+        <Link href="/ce_topic" className={cestudo.Link}>
           <button type="button" className={cestudo.start}>
             Jogar agora
           </button>

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useEffect } from "react";
 import { Components } from "./components/PageBuilder/splash_screen/Content";
 

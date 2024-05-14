@@ -8,30 +8,31 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground: #212223;
-  --foreground-yellow-white:  #FFEAB9;
-  --foreground-grey: #DADADA;
-  --foreground-grey-light: #D9D9D9;
-  --secondary-yellow: #D2A340;
+  --foreground-yellow-white: #ffeab9;
+  --foreground-grey: #9c9b9b;
+  --foreground-grey-light: #d9d9d9;
+  --secondary-yellow: #d2a340;
+  --secondary-yellow-2: #d2a440e0;
   --secondary-yellow-light: #ffd67d;
   --secondary-green: #305350;
   --secondary-green-light: #4f958f;
-  --secondary-red-light: #DF4A4A;
-  --background: #FFFFFF;
+  --secondary-red-light: #df4a4a;
+  --background: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-  --foreground: #FFFFFF;
-  --foreground-grey: #DADADA;
-  --foreground-grey-light: #787878;
-  --secondary-yellow: #D2A340;
-  --foreground-yellow-white:  #FFEAB9;
-  --secondary-yellow-light: #c6aa6e;
-  --secondary-green: #305350;
-  --secondary-green-light: #4f958f;
-  --secondary-red-light: #DF4A4A;
-  --background: #212223;
-}
+  /* :root {
+    --foreground: #ffffff;
+    --foreground-grey: #dadada;
+    --foreground-grey-light: #787878;
+    --secondary-yellow: #d2a340;
+    --foreground-yellow-white: #ffeab9;
+    --secondary-yellow-light: #c6aa6e;
+    --secondary-green: #305350;
+    --secondary-green-light: #4f958f;
+    --secondary-red-light: #df4a4a;
+    --background: #212223;
+  } */
 }
 * {
   box-sizing: border-box;
@@ -49,7 +50,7 @@ body {
 
 body {
   color: var(--foreground);
-  background-color: var(--background);
+  /* background-color: var(--background); */
 }
 
 a {
@@ -57,9 +58,8 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-  
-}
+} */

@@ -86,7 +86,7 @@ const ImageCarousel: React.FC = () => {
         ))}
       </div>
       {currentSlide === slides.length - 1 && (
-        <Link href="/signin" className={styles.getStartedButton}>Get Started
+        <Link href="/signin" className={styles.getStartedButton}>Bora jogar!
       </Link>
       )}
     </div>

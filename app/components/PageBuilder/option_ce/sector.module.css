@@ -1,0 +1,185 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../../public/signin/vectors.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  width: 100%;
+  height: 22vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info .text {
+  width: 90%;
+  height: 12.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #305350; */
+}
+
+.info .text #title {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--secondary-green);
+  margin: 30px 0 0 0;
+}
+
+.info .text .inf {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.info .text .inf span {
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+.container_sec {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+ margin: 40px 0 0 0;
+}
+
+.container_sec .first,
+.container_sec .second,
+.container_sec .third,
+.container_sec .fourth,
+.container_sec .fifth {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 40px 0;
+}
+
+.container_sec .first .options,
+.container_sec .second .options,
+.container_sec .third .options,
+.container_sec .fourth .options,
+.container_sec .fifth .options {
+  width: 180px;
+  height: 140px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway";
+  background-color: aqua;
+  position: relative;
+}
+
+.container_sec .first .options::after,
+.container_sec .second .options::after,
+.container_sec .third .options::after,
+.container_sec .fourth .options::after,
+.container_sec .fifth .options::after {
+  content: "";
+  /* position: relative; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.container_sec .first .options p,
+.container_sec .second .options p,
+.container_sec .third .options p,
+.container_sec .fourth .options p,
+.container_sec .fifth .options p {
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+  z-index: 2;
+  font-size: 1.4rem;
+}
+
+.container_sec .first .op_1,
+.container_sec .first .op_2,
+.container_sec .second .op_1,
+.container_sec .second .op_2,
+.container_sec .third .op_1,
+.container_sec .third .op_2,
+.container_sec .fourth .op_1,
+.container_sec .fourth .op_2,
+.container_sec .fifth .op_1,
+.container_sec .fifth .op_2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container_sec .first .op_1 {
+  background-image: url(../../../../public/sectores/farmer.svg);
+}
+
+.container_sec .first .op_2 {
+  background-image: url(../../../../public/sectores/education.svg);
+}
+
+.container_sec .second .op_1 {
+  background-image: url(../../../../public/sectores/energia.svg);
+}
+
+.container_sec .second .op_2 {
+  background-image: url(../../../../public/sectores/fincancas.svg);
+}
+
+.container_sec .third .op_1 {
+  background-image: url(../../../../public/sectores/imobiliario.svg);
+}
+
+.container_sec .third .op_2 {
+  background-image: url(../../../../public/sectores/logistica.svg);
+}
+
+.container_sec .fourth .op_1 {
+  background-image: url(../../../../public/sectores/urban.svg);
+}
+
+.container_sec .fourth .op_2 {
+  background-image: url(../../../../public/sectores/saude.svg);
+}
+
+.container_sec .fifth .op_1 {
+  background-image: url(../../../../public/sectores/tech.svg);
+}
+
+.container_sec .fifth .op_2 {
+  background-image: url(../../../../public/sectores/marketing.svg);
+}
+
+
+
+.green {
+  color: var(--secondary-green);
+}
+
+.dark_gold {
+  color: var(--secondary-yellow);
+}

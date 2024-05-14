@@ -1,10 +1,9 @@
-'use client';
-import { useRouter, useSearchParams } from 'next/navigation';
-import React from 'react';
+"use client";
+import { useRouter, useSearchParams } from "next/navigation";
+import React from "react";
 
 const ScorePage: React.FC = () => {
-  const score = useSearchParams().get('score');
-  
+  const score = useSearchParams().get("score");
 
   return (
     <div>

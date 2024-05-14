@@ -11,7 +11,7 @@ const Home = () => {
       <NavBar />
       <main className={styles.container}>
         <section className={styles.welcome}>
-          <h3 className={styles.welcome_title}>Olá, {localStorage.getItem("nome")}</h3>
+          <h3 className={styles.welcome_title}>Olá, Francisca Tungumuna</h3>
           <p className={styles.welcome_description}>
             Teste as suas habilidades. Escolha o seu desafio!
           </p>
@@ -19,11 +19,11 @@ const Home = () => {
         </section>
         <section className={styles.cards_container}>
           <div className={styles.rowcard}>
-            <Link href={"/topic"}>
+            <Link href={"/instruction"}>
               <Cards
                 url={"../icons/Puzzle.svg"}
                 iconColor={"var(--secondary-green-light)"}
-                ySize={"340px"}
+                ySize={"345px"}
                 title={"Caso de Estudo"}
                 description={"Soluções criativas para desafios reais"}
                 bgColor={"#305350"}
@@ -34,7 +34,7 @@ const Home = () => {
             </Link>
           </div>
           <div className={styles.side_action}>
-            <Link href={"/"}>
+            <Link href={"/instruction?id=2"}>
               <Cards
                 url={"../icons/LightOn.svg"}
                 iconColor={"var(--secondary-yellow)"}
@@ -44,7 +44,7 @@ const Home = () => {
                 fgColor={"var(--secondary-yellow)"}
               />
             </Link>
-            <Link href={"/"}>
+            <Link href={"/instruction?id=3"}>
               <Cards
                 url={"../icons/People.svg"}
                 iconColor={"var(--secondary-yellow-light)"}

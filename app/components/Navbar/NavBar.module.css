@@ -3,36 +3,47 @@
   display: none;
   color: var(--secondary-color);
 }
-.navbar {
-  display: flex;
-  padding: 20px 30px;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .nav {
   position: sticky;
-  min-width: 100dvw;
+  width: 100vw;
   display: flex;
-  gap: 30px;
   flex-direction: row;
-  list-style: none;
-  align-items: center;
   justify-content: space-around;
 }
 
-.user{
+.navbar {
+  display: flex;
+  padding: 50px 0 0 0;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.navbar .menu{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.user {
   display: flex;
   width: 48px;
   height: 48px;
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-  background-color: rosybrown;
+  background-color: var(--secondary-yellow);
   color: whitesmoke;
-}
-
-.logo img {
-  width: 128px;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 

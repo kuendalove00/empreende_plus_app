@@ -1,13 +1,13 @@
+
 .container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-image: url(../../../../public/signin/vectors.svg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--background);
 }
 
 .info {
@@ -30,10 +30,11 @@
 }
 
 .info .text #title {
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--secondary-green);
+  margin: 0 0 30px 0;
 }
 
 .info .text .inf {
@@ -42,7 +43,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.169em;
+  font-size: 1.5em;
 }
 
 .info .text .inf span {
@@ -50,10 +51,12 @@
 }
 
 .info .text .small_txt {
-  width: 72%;
+  width: 85%;
   text-align: center;
-  color: var(--foreground);
-  font-size: 1.1em;
+  color: var(--foreground-grey);
+  font-size: 1.36em;
+  font-family: "Montserrat";
+  letter-spacing: 0.5px;
 }
 
 .info .nome h2 {
@@ -66,7 +69,7 @@
 
 .steps_section {
   width: 100%;
-  height: 38vh;
+  height: 48vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,6 +78,7 @@
 
 .steps_section #title {
   font-weight: 600;
+  font-family: "Raleway";
 }
 
 .steps_section .steps {
@@ -84,18 +88,23 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
-  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.steps_section .steps p {
+  font-size: 1.3em;
 }
 
 .steps_section .steps .number {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 30px;
   font-weight: 600;
+  font-size: 1.2em;
 }
 
 .steps_section .steps .number_1 {
@@ -122,31 +131,33 @@
   color: var(--foreground);
 }
 
-.button{
-  position: absolute;
+.button {
+  /* position: absolute; */
   width: 100%;
-  height: 13vh;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0;
+  margin: 0 0 130px 0;
+  /* bottom: 0; */
 }
 
-.button .Link{
-    width: 74%;
-    display: flex;
-    justify-content: center;
+.button .Link {
+  width: 74%;
+  display: flex;
+  justify-content: center;
 }
 
 .button .Link .start {
   background-color: var(--secondary-green-light);
-  color: #FFF;
+  color: #fff;
   width: 100%;
   padding: 15px;
   border-radius: 30px;
   border: none;
-  font-size: 0.9em;
+  font-size: 1.2em;
   font-weight: 600;
+  font-family: "Raleway";
 }
 
 .green {
@@ -155,8 +166,4 @@
 
 .dark_gold {
   color: var(--secondary-yellow);
-}
-
-@media sch {
-  
 }

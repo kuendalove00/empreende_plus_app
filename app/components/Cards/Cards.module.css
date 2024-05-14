@@ -10,7 +10,6 @@
   color: whitesmoke;
   border-radius: 20px;
   overflow: hidden;
-
 }
 
 .icon_container {
@@ -18,25 +17,36 @@
   height: 32px;
 }
 
+.description{
+  font-size: 1.2em;
+}
+
+
 .icon {
   display: flex;
-  width: 36px;
-  height: 36px;
+  width: 39px;
+  height: 39px;
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-  background-color: rosybrown;
+  background-color: var(--secondary-green-light);
   color: whitesmoke;
   padding: 5px; /* Padding set to 0 to maintain consistent sizing */
+  margin: 5px 0 0 0;
 }
 
 .title {
-  font-size: 1.4em;
+  font-size: 1.3em;
   text-wrap: wrap; /* Consider using word-wrap for line breaks */
+  font-family: "Montserrat";
+  font-weight: 600;
+  margin: 10px 0 0 0;
 }
 
 .description {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-family: "Montserrat";
+
 }
 
 .users {
@@ -56,11 +66,15 @@
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-  background-color: rosybrown;
-  color: whitesmoke;
+  background-color: var(--secondary-yellow-light);
+  color: var(--secondary-green-light);
   padding: 12px; /* Reduced padding to fit within defined size */
-  border: 2px solid;
-  font-size: .6rem;
+  border: 1.5px solid;
+  font-size: 0.8rem;
+}
+
+.usericon_2 {
+  background-color: #fff;
 }
 
 .usericon:first-child {
@@ -68,17 +82,17 @@
 }
 
 .usericon:nth-child(2) {
-  transform: translateX(10px); /* Shifts the second item */
+  transform: translateX(17px); /* Shifts the second item */
 }
 
 .usericon:nth-child(3) {
-  transform: translateX(20px); /* Shifts the third item further */
-}
-.usericon:nth-child(4) {
   transform: translateX(30px); /* Shifts the third item further */
 }
+.usericon:nth-child(4) {
+  transform: translateX(45px); /* Shifts the third item further */
+}
 
-.element{
+.element {
   position: absolute;
   bottom: -15px;
   left: -15px;
@@ -89,15 +103,15 @@
     font-size: 1.8em;
     text-wrap: wrap; /* Consider using word-wrap for line breaks */
   }
-  
+
   .description {
     font-size: 1.2rem;
   }
-  .card{
+  .card {
     justify-content: space-between;
     gap: 18px;
   }
-  .element{
+  .element {
     display: none !important;
   }
 }
