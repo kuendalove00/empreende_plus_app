@@ -4,9 +4,14 @@ import logo from "../../../../public/logo_green.svg";
 import bottom from "../../../../public/signin/bottom.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { service } from "../../../../services";
+import { useForm } from "react-hook-form";
+import { responseStatus } from "../../../../utils/responseStatus";
 // import
 
 export function Content() {
+
+  
   return (
     <>
       <div className={signin.container}>
@@ -64,19 +69,41 @@ export function Greatings() {
 }
 
 export function Form() {
+
+  const { register, handleSubmit, setValue, errors } = useForm({});
+
+  const onSubmit = async (data) => {
+
+    const dados = {...data}; 
+
+    const resposta = await service.usuario.registar(dados);
+
+    if (responseStatus.CREATED === resposta.status) {
+      alert("Cadastro feito com sucesso!");
+      localStorage.setItem("nome", resposta.data.nome);
+      window.location.href = '/home';
+    }
+};
+
   return (
     <>
       <div className={signin.form_container}>
-        <form action="">
+        <form method="POST" onSubmit={handleSubmit(onSubmit)}>
           <input
             type="text"
             placeholder="Insira o seu nome"
             className={signin.inputName}
+            onInput={(event) => {
+              setValue("nome", event.target.value);
+          }}
+          id="nome" name="nome" required={true}  {...register("nome", { required: true })}
           />
-          <Link href="/home" className={signin.Link}>
-            <button type="button" className={signin.start}>
+
+            <button type="submit" className={signin.start}>
               Começar!
             </button>
+          <Link href="/home" className={signin.Link}>
+            
           </Link>
         </form>
       </div>

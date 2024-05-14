@@ -11,7 +11,7 @@ const Home = () => {
       <NavBar />
       <main className={styles.container}>
         <section className={styles.welcome}>
-          <h3 className={styles.welcome_title}>Olá, Francisca Tungumuna</h3>
+          <h3 className={styles.welcome_title}>Olá, {localStorage.getItem("nome")}</h3>
           <p className={styles.welcome_description}>
             Teste as suas habilidades. Escolha o seu desafio!
           </p>
