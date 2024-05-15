@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Header } from "../../Header/Header";
 import MenuFooter from "../../MenuFooter";
 
-export function Conteudo() {
+export function Steps_cest() {
   return (
     <>
       <div className={cestudo.container}>

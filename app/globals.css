@@ -18,6 +18,7 @@
   --secondary-green-light: #4f958f;
   --secondary-red-light: #df4a4a;
   --background: #ffffff;
+  --alface: #7CB342
 }
 
 @media (prefers-color-scheme: dark) {

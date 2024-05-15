@@ -57,7 +57,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
- margin: 40px 0 0 0;
+  margin: 40px 0 0 0;
 }
 
 .container_sec .first,
@@ -173,8 +173,6 @@
 .container_sec .fifth .op_2 {
   background-image: url(../../../../public/sectores/marketing.svg);
 }
-
-
 
 .green {
   color: var(--secondary-green);

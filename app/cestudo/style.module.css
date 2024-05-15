@@ -30,13 +30,15 @@
 }
 
 .container{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  gap: 5px;
   width: 100%;
-  min-height: 90%;
+  height: 100vh;
+  background-image: url(../../public/signin/vectors.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
 }
 .questionary{
   display: flex;

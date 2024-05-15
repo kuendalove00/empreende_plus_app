@@ -36,7 +36,7 @@ const MenuFooter = () => {
               width={40}
               height={30.5}
             />
-            <span>Avaliar</span>
+            <span>Score</span>
           </Link>
         </li>
       </ul>

@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   /* background-color: #000; */
+  z-index: 2;
 }
 
 .header .top {
@@ -19,6 +20,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  z-index: 2;
   /* background-color: var(--secondary-yellow); */
 }
 

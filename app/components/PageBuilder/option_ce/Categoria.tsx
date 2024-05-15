@@ -27,20 +27,20 @@ export function Body() {
       </div>
 
       <div className={categoria.options}>
-        <Link href={'/sector_ce'} className={categoria.Link}>
-        <button className={`${categoria.btn} ${categoria.btn_light_green}`}>
-          Produto físico
-        </button>
+        <Link href={"/sectores"} className={categoria.Link}>
+          <button className={`${categoria.btn} ${categoria.btn_light_green}`}>
+            Produto físico
+          </button>
         </Link>
-        <Link href={'/instruction'} className={categoria.Link}>
-        <button className={`${categoria.btn} ${categoria.btn_gold}`}>
-          Prestação de serviço
-        </button>
+        <Link href={"/sectores"} className={categoria.Link}>
+          <button className={`${categoria.btn} ${categoria.btn_gold}`}>
+            Prestação de serviço
+          </button>
         </Link>
-        <Link href={'/instruction'} className={categoria.Link}>
-        <button className={`${categoria.btn} ${categoria.btn_green}`}>
-          Software
-        </button>
+        <Link href={"/sectores"} className={categoria.Link}>
+          <button className={`${categoria.btn} ${categoria.btn_green}`}>
+            Software
+          </button>
         </Link>
       </div>
     </>

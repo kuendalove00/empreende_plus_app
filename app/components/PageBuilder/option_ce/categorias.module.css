@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.container .center{
+.container .center {
   width: 100%;
   height: 50vh;
   display: flex;
@@ -65,20 +65,19 @@
   border-radius: 15px;
   font-size: 1.27em;
   font-weight: 500;
-  color: #FFF;
+  color: #fff;
 }
 
-.dark_gold{
+.dark_gold {
   color: var(--secondary-yellow);
 }
 
-.btn_light_green{
+.btn_light_green {
   background-color: var(--secondary-green-light);
 }
-.btn_green{
+.btn_green {
   background-color: var(--secondary-green);
 }
-.btn_gold{
+.btn_gold {
   background-color: var(--secondary-yellow-2);
 }
-

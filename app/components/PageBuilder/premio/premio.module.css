@@ -1,0 +1,99 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../../public/score_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  overflow-y: hidden;
+}
+
+.container::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  z-index: 1;
+  overflow-y: hidden;
+}
+
+.container .inner {
+  width: 100%;
+  position: absolute;
+  color: #fff;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+
+}
+
+.container .inner .txt{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Raleway";
+    margin: 90px 0 40px 0;
+}
+
+.container .inner .txt h1{
+    font-size: 2.6em;
+    font-weight: 600;
+}
+
+.container .inner .txt p{
+    font-size: 1.5em;
+}
+
+.container .inner .popup_p{
+    width: 85%;
+    height: 55vh;
+    background-color: #FFF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .inner .popup_p .in{
+    width: 100%;
+    height: 70%;
+    /* background-color: aqua; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .inner .popup_p .in .img{
+    border-radius: 160px;
+
+}
+
+.container .inner .popup_p .in .text{
+    font-family: "Raleway";
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.green {
+  color: var(--secondary-green-light);
+}
+
+.gold {
+  color: var(--secondary-yellow);
+}

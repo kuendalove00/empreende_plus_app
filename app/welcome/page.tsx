@@ -1,26 +1,26 @@
-'use client';
-import React, { useState, useEffect, useRef } from 'react';
-import styles from './style.module.css';
-import Link from 'next/link';
+"use client";
+import React, { useState, useEffect, useRef } from "react";
+import styles from "./style.module.css";
+import Link from "next/link";
 // Define a type for the slides
 type Slide = {
   imageUrl: string; // URL of the image
-  altText: string;  // Alt text for the image
+  altText: string; // Alt text for the image
 };
 
 // Define the slides with image URLs
 const slides: Slide[] = [
   {
-    imageUrl: '/welcome/welcome1.png',
-    altText: 'A beautiful sunset over the ocean.',
+    imageUrl: "/welcome/welcome1.png",
+    altText: "A beautiful sunset over the ocean.",
   },
   {
-    imageUrl: '/welcome/welcome2.png',
-    altText: 'A majestic mountain landscape.',
+    imageUrl: "/welcome/welcome2.png",
+    altText: "A majestic mountain landscape.",
   },
   {
-    imageUrl: '/welcome/welcome3.png',
-    altText: 'A lush forest scene.',
+    imageUrl: "/welcome/welcome3.png",
+    altText: "A lush forest scene.",
   },
 ];
 
@@ -64,7 +64,6 @@ const ImageCarousel: React.FC = () => {
     }
   };
 
- 
   return (
     <div
       className={styles.carousel}
@@ -80,14 +79,17 @@ const ImageCarousel: React.FC = () => {
         {slides.map((_, index) => (
           <span
             key={index}
-            className={`${styles.dot} ${currentSlide === index ? styles.activeDot : ''}`}
+            className={`${styles.dot} ${
+              currentSlide === index ? styles.activeDot : ""
+            }`}
             onClick={() => setCurrentSlide(index)}
           />
         ))}
       </div>
       {currentSlide === slides.length - 1 && (
-        <Link href="/signin" className={styles.getStartedButton}>Bora jogar!
-      </Link>
+        <Link href="/signin" className={styles.getStartedButton}>
+          Bora jogar!
+        </Link>
       )}
     </div>
   );

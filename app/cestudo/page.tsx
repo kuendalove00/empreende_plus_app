@@ -183,7 +183,7 @@ const QuizPage: React.FC = () => {
           answer={questions[currentQuestionIndex].correctAnswer}
         />
       </div>
-      <MenuFooter />
+      {/* <MenuFooter /> */}
     </>
   );
 };

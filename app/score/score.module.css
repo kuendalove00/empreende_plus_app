@@ -1,0 +1,173 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../public/score_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  overflow-y: hidden;
+}
+
+.container::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  z-index: 1;
+  overflow-y: hidden;
+
+}
+
+.container .inner {
+  width: 100%;
+  position: absolute;
+  color: #fff;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+
+}
+
+.container .inner .text {
+  width: 80%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 90px 0 0 0;
+  text-align: center;
+  /* background-color: #fff; */
+}
+
+.container .inner .text .fimjogo {
+  font-size: 2em;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.container .inner .text .congrat {
+  font-size: 3.4em;
+  font-family: "Raleway";
+  font-weight: 700;
+}
+
+.container .inner .text p {
+  font-family: "Raleway";
+  font-size: 1.6em;
+}
+
+.container .inner .text .ptc {
+  font-size: 3.3em;
+  color: var(--secondary-yellow);
+  margin: 10px 0 0 0;
+}
+
+.container .roleta {
+  width: 100%;
+  /* height: 40vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #FFF; */
+  margin: 40px 0 0 0;
+}
+
+.container .roleta .roletaInner {
+  width: 400px;
+  height: 400px;
+  border: 10px solid var(--secondary-yellow);
+  border-radius: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .roleta .roletaInner_2 {
+  width: 360px;
+  height: 360px;
+  border-radius: 300px;
+  background-color: #d9d9d9;
+}
+
+.container .roleta .roletaInner_2 .polygon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.container .roleta .roletaInner_2 .polygon .polygon_1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .roleta .roletaInner_2 .polygon .polygon_2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    /* background-color: #fff; */
+    margin: 90px 0 0 0;
+    padding: 0 0 0 8px;
+}
+
+.container .roleta .roletaInner_2 .polygon .btn{
+    width: 50%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #fff; */
+    margin: 0px 0 0 0;
+}
+
+.container .roleta .roletaInner_2 .polygon .btn .btn_1{
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondary-green);
+    border-radius: 50px;
+    color: #FFF;
+    font-family: "Raleway";
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .inner .bottom_txt{
+    width: 90%;
+    text-align: center;
+    margin: 40px 0 0 0;
+    font-family: "raleway";
+    font-size: 1.5em;
+}
+
+
+.green {
+  color: var(--secondary-green-light);
+}
+
+.gold {
+  color: var(--secondary-yellow);
+}

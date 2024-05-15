@@ -19,7 +19,7 @@ const Home = () => {
         </section>
         <section className={styles.cards_container}>
           <div className={styles.rowcard}>
-            <Link href={"/instruction"}>
+            <Link href={"/instructions/cest"}>
               <Cards
                 url={"../icons/Puzzle.svg"}
                 iconColor={"var(--secondary-green-light)"}
@@ -34,7 +34,7 @@ const Home = () => {
             </Link>
           </div>
           <div className={styles.side_action}>
-            <Link href={"/instruction?id=2"}>
+            <Link href={"/instruction_pm"}>
               <Cards
                 url={"../icons/LightOn.svg"}
                 iconColor={"var(--secondary-yellow)"}
@@ -44,7 +44,7 @@ const Home = () => {
                 fgColor={"var(--secondary-yellow)"}
               />
             </Link>
-            <Link href={"/instruction?id=3"}>
+            <Link href={"/instruction_dm"}>
               <Cards
                 url={"../icons/People.svg"}
                 iconColor={"var(--secondary-yellow-light)"}
