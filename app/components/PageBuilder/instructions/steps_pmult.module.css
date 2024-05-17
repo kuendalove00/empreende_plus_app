@@ -1,0 +1,170 @@
+
+.container {
+    width: 100%;
+    height: auto;
+    background-image: url(../../../../public/signin/vectors.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .info {
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .info .text {
+    width: 90%;
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #305350; */
+  }
+  
+  .info .text #title {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--secondary-green);
+    margin: 0 0 30px 0;
+  }
+  
+  .info .text .inf {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .info .text .inf span {
+    font-weight: 500;
+  }
+  
+  .info .text .small_txt {
+    width: 85%;
+    text-align: center;
+    color: var(--foreground-grey);
+    font-size: 1.36em;
+    font-family: "Montserrat";
+    letter-spacing: 0.5px;
+  }
+  
+  .info .nome h2 {
+    font-weight: 600;
+  }
+  
+  .info p {
+    font-weight: 500;
+  }
+  
+  .steps_section {
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .steps_section #title {
+    font-weight: 600;
+    font-family: "Raleway";
+  }
+  
+  .steps_section .steps {
+    width: 85%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    font-family: "Montserrat";
+  }
+  
+  .steps_section .steps p {
+    font-size: 1.3em;
+  }
+  
+  .steps_section .steps .number {
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  
+  .steps_section .steps .number_1 {
+    background-color: var(--secondary-green);
+  }
+  
+  .steps_section .steps .number_2 {
+    background-color: var(--secondary-yellow);
+  }
+  
+  .steps_section .steps .number_3 {
+    background-color: var(--secondary-green-light);
+  }
+  
+  .steps_section .steps .number_4 {
+    background-color: var(--secondary-yellow-light);
+  }
+  
+  .steps_section .steps .text_step {
+    width: 85%;
+    font-size: 0.9em;
+    line-height: 1.9;
+    text-align: justify;
+    color: var(--foreground);
+  }
+  
+  .button {
+    /* position: absolute; */
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 130px 0;
+    /* bottom: 0; */
+  }
+  
+  .button .Link {
+    width: 74%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button .Link .start {
+    background-color: var(--secondary-green-light);
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: "Raleway";
+  }
+  
+  .green {
+    color: var(--secondary-green);
+  }
+  
+  .dark_gold {
+    color: var(--secondary-yellow);
+  }
+  

@@ -13,6 +13,24 @@ async function registar(data = {})
     }
 }
 
+
+async function opcoes(filter = {
+    categoria: "2",
+    sector: "3"
+  })
+{
+    try{
+        const queryParams = new URLSearchParams(filter);
+        alert("Query: "+queryParams);
+        const response = await axiosInstance.get(`/caso-estudo/opcoes?${queryParams}`);
+        alert("Resposta: "+JSON.stringify(response.data));
+        return response;
+    }catch(error)
+    {
+        return error.response;
+    }
+}
+
 async function listar()
 {
     try{
@@ -60,4 +78,4 @@ async function excluir(data={})
 }
 
 
-export const caso_estudo = {registar, listar, detalhar, atualizar, excluir}
+export const caso_estudo = {registar, listar, opcoes, detalhar, atualizar, excluir}

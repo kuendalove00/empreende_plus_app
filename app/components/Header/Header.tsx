@@ -3,7 +3,8 @@ import icon from "../../../public/icons/back.svg";
 import Image from "next/image";
 import { useMediaQuery } from "@react-hook/media-query";
 import style from "./header.module.css";
-export function Header() {
+
+export function Header({nome=""}) {
   const colorScheme = useMediaQuery("(prefers-color-scheme: dark)");
   return (
     <header className={style.header}>
@@ -20,7 +21,7 @@ export function Header() {
           <Image src={logo} alt="" width={115} />
         </div>
         <div className={style.name}>
-          <div className={style.ini_name}>M</div>
+          <div className={style.ini_name}>{nome? nome.charAt(0) : "S"}</div>
         </div>
       </div>
     </header>

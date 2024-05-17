@@ -1,19 +1,19 @@
 import React, { useState } from "react";
-import signin from "./signin.module.css";
+import check from "./check.module.css";
 import logo from "../../../../public/logo_green.svg";
 import bottom from "../../../../public/signin/bottom.svg";
 import Link from "next/link";
 import Image from "next/image";
 import { service } from "../../../../services"
 import { useForm } from "react-hook-form";
-import { responseStatus } from "../../../../utils/responseStatus"
+import { responseStatus } from "../../../../utils/responseStatus";
 // import
 
 export function Content() {
   return (
     <>
-      <div className={signin.container}>
-        <div className={signin.content}>
+      <div className={check.container}>
+        <div className={check.content}>
           <Header />
           <Name />
           <Greatings />
@@ -28,14 +28,14 @@ export function Content() {
 export function Header() {
   return (
     <>
-      <div className={signin.header}>
-        <div className={signin.logo}>
+      <div className={check.header}>
+        <div className={check.logo}>
           <Image src={logo} alt="logo" />
         </div>
-        <div className={signin.slogan}>
+        <div className={check.slogan}>
           <p>
-            <span className={signin.dark_gold}>Quiz |</span>{" "}
-            <span className={signin.green}>empreende</span> +
+            <span className={check.dark_gold}>Quiz |</span>{" "}
+            <span className={check.green}>empreende</span> +
           </p>
         </div>
       </div>
@@ -46,8 +46,8 @@ export function Header() {
 export function Name() {
   return (
     <>
-      <div className={signin.name_container}>
-        <div className={signin.ini_name}>
+      <div className={check.name_container}>
+        <div className={check.ini_name}>
           <p>S</p>
         </div>
       </div>
@@ -58,8 +58,8 @@ export function Name() {
 export function Greatings() {
   return (
     <>
-      <div className={signin.great_container}>
-        <h2 id={signin.title}>Antes de começarmos,</h2>
+      <div className={check.great_container}>
+        <h2 id={check.title}>Antes de começarmos,</h2>
         <p>Precisaremos distinguí-lo na tabela de pontuação:</p>
       </div>
     </>
@@ -74,37 +74,37 @@ export function Form() {
 
     const dados = {...data}; 
 
-    const resposta = await service.usuario.registar(dados);
+    const resposta = await service.usuario.verificar(dados);
 
-    if (responseStatus.CREATED === resposta.status) {
-      alert("Cadastro feito com sucesso!");
-      localStorage.setItem("nome", resposta.data.nome);
+    if (responseStatus.OK === resposta.status) {
+      localStorage.setItem("nome", data?.nome);
       window.location.href = '/home';
-    }else {
-      alert("Usuário já existe!")
+    }else{
+      alert("Registo não encontrado");
     }
+    
 };
 
   return (
     <>
-      <div className={signin.form_container}>
+      <div className={check.form_container}>
         <form method="POST" onSubmit={handleSubmit(onSubmit)}>
           <input
             type="text"
             placeholder="Insira o seu nome"
-            className={signin.inputName}
+            className={check.inputName}
             onInput={(event) => {
               setValue("nome", event.target.value);
           }}
           id="nome" name="nome" required={true}  {...register("nome", { required: true })}
           />
 
-            <button type="submit" className={signin.start}>
-              Começar!
+            <button type="submit" className={check.start}>
+              Verificar!
             </button>
-            <Link href="/check" className={signin.Link}>
-                Verificar Conta!
-            </Link>
+          <Link href="/signin" className={check.Link}>
+              Criar Conta!            
+          </Link>
         </form>
       </div>
     </>
@@ -114,7 +114,7 @@ export function Form() {
 export function Footer() {
   return (
     <>
-      <div className={signin.footer}>
+      <div className={check.footer}>
         <Image src={bottom} alt="bottom" />
       </div>
     </>

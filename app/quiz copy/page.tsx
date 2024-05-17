@@ -24,7 +24,49 @@ let questions = [
     options: ['3', '4', '5', '6'],
     correctAnswer: '4',
   },
-   {
+  {
+    intro : "A empresa SocialBoost está a lançar um serviço de consultoria em marketing de mídia social para auxiliar empresas a aumentar a sua presença online e o engajamento nas redes sociais.",
+    question: '1- Qual é o subsector em foco para o serviço de consultoria em marketing de mídia social da SocialBoost?',
+    options: ['a) Consultoria financeira', 'b) Consultoria jurídica', 'c) Consultoria de recursos humanos', 'd) Consultoria em marketing digital e publicidade'],
+    correctAnswer: 'd) Consultoria em marketing digital e publicidade',
+  },
+  {
+    intro : "A empresa SocialBoost está a lançar um serviço de consultoria em marketing de mídia social para auxiliar empresas a aumentar a sua presença online e o engajamento nas redes sociais.",
+    question: '1- Qual é o subsector em foco para o serviço de consultoria em marketing de mídia social da SocialBoost?',
+    options: ['a) Consultoria financeira', 'b) Consultoria jurídica', 'c) Consultoria de recursos humanos', 'd) Consultoria em marketing digital e publicidade'],
+    correctAnswer: 'd) Consultoria em marketing digital e publicidade',
+  },
+  {
+    intro : "A empresa SocialBoost está a lançar um serviço de consultoria em marketing de mídia social para auxiliar empresas a aumentar a sua presença online e o engajamento nas redes sociais.",
+    question: '1- Qual é o subsector em foco para o serviço de consultoria em marketing de mídia social da SocialBoost?',
+    options: ['a) Consultoria financeira', 'b) Consultoria jurídica', 'c) Consultoria de recursos humanos', 'd) Consultoria em marketing digital e publicidade'],
+    correctAnswer: 'd) Consultoria em marketing digital e publicidade',
+  },
+  {
+    intro : "A empresa SocialBoost está a lançar um serviço de consultoria em marketing de mídia social para auxiliar empresas a aumentar a sua presença online e o engajamento nas redes sociais.",
+    question: '1- Qual é o subsector em foco para o serviço de consultoria em marketing de mídia social da SocialBoost?',
+    options: ['a) Consultoria financeira', 'b) Consultoria jurídica', 'c) Consultoria de recursos humanos', 'd) Consultoria em marketing digital e publicidade'],
+    correctAnswer: 'd) Consultoria em marketing digital e publicidade',
+  },
+  {
+    intro : "A empresa SocialBoost está a lançar um serviço de consultoria em marketing de mídia social para auxiliar empresas a aumentar a sua presença online e o engajamento nas redes sociais.",
+    question: '1- Qual é o subsector em foco para o serviço de consultoria em marketing de mídia social da SocialBoost?',
+    options: ['a) Consultoria financeira', 'b) Consultoria jurídica', 'c) Consultoria de recursos humanos', 'd) Consultoria em marketing digital e publicidade'],
+    correctAnswer: 'd) Consultoria em marketing digital e publicidade',
+  },
+  {
+    intro : "A empresa SocialBoost está a lançar um serviço de consultoria em marketing de mídia social para auxiliar empresas a aumentar a sua presença online e o engajamento nas redes sociais.",
+    question: '1- Qual é o subsector em foco para o serviço de consultoria em marketing de mídia social da SocialBoost?',
+    options: ['a) Consultoria financeira', 'b) Consultoria jurídica', 'c) Consultoria de recursos humanos', 'd) Consultoria em marketing digital e publicidade'],
+    correctAnswer: 'd) Consultoria em marketing digital e publicidade',
+  },
+  {
+    intro : "A empresa SocialBoost está a lançar um serviço de consultoria em marketing de mídia social para auxiliar empresas a aumentar a sua presença online e o engajamento nas redes sociais.",
+    question: '1- Qual é o subsector em foco para o serviço de consultoria em marketing de mídia social da SocialBoost?',
+    options: ['a) Consultoria financeira', 'b) Consultoria jurídica', 'c) Consultoria de recursos humanos', 'd) Consultoria em marketing digital e publicidade'],
+    correctAnswer: 'd) Consultoria em marketing digital e publicidade',
+  },
+  {
     intro : "A empresa SocialBoost está a lançar um serviço de consultoria em marketing de mídia social para auxiliar empresas a aumentar a sua presença online e o engajamento nas redes sociais.",
     question: '1- Qual é o subsector em foco para o serviço de consultoria em marketing de mídia social da SocialBoost?',
     options: ['a) Consultoria financeira', 'b) Consultoria jurídica', 'c) Consultoria de recursos humanos', 'd) Consultoria em marketing digital e publicidade'],
@@ -98,9 +140,9 @@ const QuizPage: React.FC = () => {
 
   const getQuestions = async () => {
     const resposta = await service.caso_estudo.opcoes({categoria: "2", sector: "3"});
-    alert(JSON.stringify(resposta));
+
     if (resposta?.status === responseStatus?.OK) {
-      questions = resposta.data;
+      alert(resposta.data);
     } else {
       alert("Nada");
     }
@@ -156,7 +198,7 @@ const QuizPage: React.FC = () => {
 
   return (
     <>
-    <NavBar />
+    <NavBar/>
     <div className={style.main}>
       <p className={style.timer}>Time Left: {timeLeft} seconds</p>
       {completed == false && currentQuestionIndex < questions.length? 

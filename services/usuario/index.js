@@ -13,6 +13,17 @@ async function registar(data = {})
     }
 }
 
+async function verificar(data = {})
+{
+    try{
+        const response = await axiosInstance.get(`/usuario/verificar/${data.id}`);
+        return response;
+    }catch(error)
+    {
+        return error.response;
+    }
+}
+
 async function listar()
 {
     try{
@@ -60,4 +71,4 @@ async function excluir(data={})
 }
 
 
-export const usuario = {registar, listar, detalhar, atualizar, excluir}
+export const usuario = {registar, listar, verificar, detalhar, atualizar, excluir}

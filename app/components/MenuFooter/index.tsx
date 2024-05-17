@@ -29,7 +29,7 @@ const MenuFooter = () => {
           </Link>
         </li>
         <li>
-          <Link href={"/"} className={styles.menuitem}>
+          <Link href={"/scoreboard"} className={styles.menuitem}>
             <Image
               src={"../icons/Star.svg"}
               alt="Rate"

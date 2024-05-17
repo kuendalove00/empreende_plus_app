@@ -12,7 +12,7 @@ export default function TimerCestudo() {
   return (
     <>
       <div className={timer.container}>
-        <Header />
+        <Header nome={localStorage.getItem("nome")?.toString()} />
         <Content />
         <MenuFooter />
       </div>

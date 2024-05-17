@@ -13,9 +13,9 @@ const PopUp = ({ correct = false, answer = '', show = false }) => {
         height={108} 
         />
       {correct ? (
-        <p>Correct!</p>
+        <p>Correcto!</p>
       ) : (
-        <p>Wrong! The correct answer is {answer}</p>
+        <p>Incorrecto! A resposta correcta é {answer}</p>
       )}
     </div>
   </div>

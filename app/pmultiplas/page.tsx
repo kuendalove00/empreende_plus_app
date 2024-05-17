@@ -9,7 +9,34 @@ import MenuFooter from "../components/MenuFooter";
 import { service } from "@/services";
 import { responseStatus } from "@/utils/responseStatus";
 
-let questions = [];
+let questions = [
+  {
+    intro: "",
+    question: "What is the capital of France?",
+    options: ["London", "Paris", "Berlin", "Madrid"],
+    correctAnswer: "Paris",
+  },
+  {
+    intro: "",
+    question: "What is 2 + 2?",
+    options: ["3", "4", "5", "6"],
+    correctAnswer: "4",
+  },
+  {
+    intro:
+      "A empresa SocialBoost está a lançar um serviço de consultoria em marketing de mídia social para auxiliar empresas a aumentar a sua presença online e o engajamento nas redes sociais.",
+    question:
+      "1- Qual é o subsector em foco para o serviço de consultoria em marketing de mídia social da SocialBoost?",
+    options: [
+      "a) Consultoria financeira",
+      "b) Consultoria jurídica",
+      "c) Consultoria de recursos humanos",
+      "d) Consultoria em marketing digital e publicidade",
+    ],
+    correctAnswer: "d) Consultoria em marketing digital e publicidade",
+  },
+  // Add more questions as needed
+];
 
 const Question = ({
   correctOp,
@@ -81,7 +108,7 @@ const QuizPage: React.FC = () => {
   };
 
   const getQuestions = async () => {
-    const resposta = await service.caso_estudo.opcoes({categoria: "2", sector: "3"});
+    const resposta = await service.questoes_multiplas.listar();
     alert(JSON.stringify(resposta));
     if (resposta?.status === responseStatus?.OK) {
       questions = resposta.data;
@@ -170,7 +197,6 @@ const QuizPage: React.FC = () => {
           show={showPopup}
           correct={correct}
           answer={questions[currentQuestionIndex].correctAnswer}
-
         />
       </div>
       {/* <MenuFooter /> */}

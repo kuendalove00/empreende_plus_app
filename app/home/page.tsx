@@ -8,10 +8,10 @@ import Link from "next/link";
 const Home = () => {
   return (
     <div className={styles.screen}>
-      <NavBar />
+      <NavBar nome={localStorage.getItem("nome")?.toString()} />
       <main className={styles.container}>
         <section className={styles.welcome}>
-          <h3 className={styles.welcome_title}>Olá, Francisca Tungumuna</h3>
+          <h3 className={styles.welcome_title}>Olá, {localStorage.getItem("nome")}</h3>
           <p className={styles.welcome_description}>
             Teste as suas habilidades. Escolha o seu desafio!
           </p>
@@ -19,7 +19,7 @@ const Home = () => {
         </section>
         <section className={styles.cards_container}>
           <div className={styles.rowcard}>
-            <Link href={"/instructions/cest"}>
+            <Link href={"/instruction_cest"}>
               <Cards
                 url={"../icons/Puzzle.svg"}
                 iconColor={"var(--secondary-green-light)"}
@@ -34,26 +34,18 @@ const Home = () => {
             </Link>
           </div>
           <div className={styles.side_action}>
-            <Link href={"/instruction_pm"}>
+            <Link href={"../instruction"}>
               <Cards
                 url={"../icons/LightOn.svg"}
                 iconColor={"var(--secondary-yellow)"}
-                ySize={"50%"}
+                ySize={"350px"}
                 title={"Perguntas Múltiplas"}
+                description={"Teste o seu conhecimento"}
                 bgColor={"#FFEAB9"}
                 fgColor={"var(--secondary-yellow)"}
               />
             </Link>
-            <Link href={"/instruction_dm"}>
-              <Cards
-                url={"../icons/People.svg"}
-                iconColor={"var(--secondary-yellow-light)"}
-                ySize={"50%"}
-                title={"Desafio Multiplayer"}
-                bgColor={"var(--secondary-yellow)"}
-                fgColor={"whitesmoke"}
-              />
-            </Link>
+            
           </div>
         </section>
         <section className={styles.others}>

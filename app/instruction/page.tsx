@@ -1,10 +1,10 @@
 'use client';
 import React from "react";
-import { Conteudo } from "../components/PageBuilder/instructions/Steps_cestudo";
+import { Steps_pmult } from "../components/PageBuilder/instructions/steps_pmult";
 
 const Instruction = () => {
   return (
-      <Conteudo />
+      <Steps_pmult />
   );
 }
 export default Instruction;

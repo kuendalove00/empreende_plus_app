@@ -9,57 +9,30 @@ import polygon2 from "../../public/polygon/Polygon 2.svg";
 import polygon3 from "../../public/polygon/Polygon 3.svg";
 import polygon4 from "../../public/polygon/Polygon 4.svg";
 import pointer from "../../public/polygon/pointer.svg";
-import { service } from "../../services"
-import { useForm } from "react-hook-form";
-import { responseStatus } from "../../utils/responseStatus"
-
-async function saveScore(score) {
-    const resposta = await service.pontuacao.registar({usuarioID: 1,
-    modoID: 1,
-    pontos: score});
-
-    if (responseStatus.CREATED === resposta.status) {
-      alert("Pontuação registada com sucesso!");
-    }
-}
-
 
 const ScorePage: React.FC = () => {
   const score = useSearchParams().get("score");
 
   return (
-    <div  className={scoree.container}>
+    <div className={scoree.container}>
       <div className={scoree.inner}>
         <div className={scoree.text}>
           <h3 className={scoree.fimjogo}>Fim do jogo!</h3>
-           {
-          parseInt(score) < 50 ? <>
-          <br />
-              <h2 className={scoree.congrat}>
-              <span >Não foi o </span>
-              <span className={scoree.gold}>suficiente!!</span>
-            </h2>
-            <br />
-            <p>Você errou a maior parte das questões!</p>
-          </> : <>
-          {
-          parseInt(score) === 100 ? <>
-            <h2 className={scoree.congrat}>
+          <h2 className={scoree.congrat}>
             <span className={scoree.green}>Par</span>ab
             <span className={scoree.gold}>éns!!</span>
           </h2>
-          <p>Você conseguiu uma excelente pontuação!</p>
-          </> : <>
-            <h2 className={scoree.congrat}>
-            <span className={scoree.green}>Par</span>ab
-            <span className={scoree.gold}>éns!!</span>
-          </h2>
-          <p>Você conseguiu uma boa pontuação!</p>
-          </>
-          }
-          </>
-          }
+          <p>Você conseguiu pontos suficientes para ganhar um prêmio!</p>
           <h1 className={scoree.ptc}>{score} pts</h1>
+        </div>
+        <div className={scoree.roleta}>
+          <Roleta />
+        </div>
+        <div className={scoree.bottom_txt}>
+          <p>
+            Preparado(a)? Gire a roleta e deixe a sorte decidir o que você vai
+            levar para casa!
+          </p>
         </div>
       </div>
     </div>
@@ -69,7 +42,6 @@ const ScorePage: React.FC = () => {
 export default ScorePage;
 
 export function Roleta() {
-  
   return (
     <>
       <div className={scoree.roletaInner}>

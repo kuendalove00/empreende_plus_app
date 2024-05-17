@@ -10,7 +10,7 @@ export function Steps_cest() {
   return (
     <>
       <div className={cestudo.container}>
-        <Header />
+        <Header nome={localStorage.getItem("nome")?.toString()} />
         <Info />
         <Steps />
         <MenuFooter />

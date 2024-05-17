@@ -8,7 +8,7 @@ export function Sector() {
   return (
     <>
       <div className={sector.container}>
-        <Header />
+        <Header nome={localStorage.getItem("nome")?.toString()} />
         <Body />
         <Sectores />
       </div>
@@ -17,6 +17,7 @@ export function Sector() {
 }
 
 export function Body() {
+
   return (
     <>
       <div className={sector.info}>
@@ -40,7 +41,8 @@ const Sectores: React.FC = () => {
       <div className={sector.container_sec}>
         <div className={sector.first}>
           <Link href="/timer/caso_estudo">
-            <div className={`${sector.options} ${sector.op_1}`}>
+            <div
+             className={`${sector.options} ${sector.op_1}`}>
               <p>Agricultura</p>
             </div>
           </Link>
@@ -54,9 +56,7 @@ const Sectores: React.FC = () => {
           <Link href="timer/caso_estudo">
             <div className={`${sector.options} ${sector.op_1}`}>
               <p>
-                Energias
-                <br />
-                renováveis
+                Saúde
               </p>
             </div>
           </Link>
@@ -66,50 +66,7 @@ const Sectores: React.FC = () => {
             </div>
           </Link>
         </div>
-        <div className={sector.third}>
-          <Link href="timer/caso_estudo">
-            <div className={`${sector.options} ${sector.op_1}`}>
-              <p>Imobiliário</p>
-            </div>
-          </Link>
-          <Link href="timer/caso_estudo">
-            <div className={`${sector.options} ${sector.op_2}`}>
-              <p>
-                Logística e <br /> distribuição
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div className={sector.fourth}>
-          <Link href="timer/caso_estudo">
-            <div className={`${sector.options} ${sector.op_1}`}>
-              <p>
-                Mobilidade
-                <br />
-                urbana
-              </p>
-            </div>
-          </Link>
-          <Link href="timer/caso_estudo">
-            <div className={`${sector.options} ${sector.op_2}`}>
-              <p>Saúde</p>
-            </div>
-          </Link>
-        </div>
-        <div className={sector.fifth}>
-          <Link href="timer/caso_estudo">
-            <div className={`${sector.options} ${sector.op_1}`}>
-              <p>Tecnologia</p>
-            </div>
-          </Link>
-          <Link href="timer/caso_estudo">
-            <div className={`${sector.options} ${sector.op_2}`}>
-              <p>
-                Publicidade & <br /> Marketing
-              </p>
-            </div>
-          </Link>
-        </div>
+        
       </div>
     </>
   );

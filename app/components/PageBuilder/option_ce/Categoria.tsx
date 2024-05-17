@@ -4,11 +4,12 @@ import categoria from "./categorias.module.css";
 import MenuFooter from "../../MenuFooter";
 import Link from "next/link";
 
+
 export default function Categoria() {
   return (
     <>
       <div className={categoria.container}>
-        <Header />
+        <Header nome={localStorage.getItem("nome")?.toString()} />
         <div className={categoria.center}>
           <Body />
         </div>
@@ -19,6 +20,8 @@ export default function Categoria() {
 }
 
 export function Body() {
+  
+
   return (
     <>
       <div className={categoria.texto}>
@@ -28,17 +31,23 @@ export function Body() {
 
       <div className={categoria.options}>
         <Link href={"/sectores"} className={categoria.Link}>
-          <button className={`${categoria.btn} ${categoria.btn_light_green}`}>
+          <button 
+          
+          className={`${categoria.btn} ${categoria.btn_light_green}`}>
             Produto físico
           </button>
         </Link>
         <Link href={"/sectores"} className={categoria.Link}>
-          <button className={`${categoria.btn} ${categoria.btn_gold}`}>
+          <button
+         
+           className={`${categoria.btn} ${categoria.btn_gold}`}>
             Prestação de serviço
           </button>
         </Link>
         <Link href={"/sectores"} className={categoria.Link}>
-          <button className={`${categoria.btn} ${categoria.btn_green}`}>
+          <button
+         
+          className={`${categoria.btn} ${categoria.btn_green}`}>
             Software
           </button>
         </Link>
